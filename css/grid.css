@@ -1,0 +1,117 @@
+@font-face {
+  font-family: "UthmanTahaNaskh";
+  src: url("../fonts/Oficial_UthmanicHafs_V20.ttf"); /*format('svg'); */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family:  "palatino linotype", "UthmanTahaNaskh", "serif";
+}
+#generalBox {
+  /* background-color: blue; */
+  padding: 10px 0 35px 0;
+  display: flex;
+}
+
+/* ==================  меню с лева */
+
+.sidebar {
+  border: 1px solid black;
+  /* background-color: aquamarine; */
+  padding: 0;
+  width: 30%;
+  margin: 0;
+}
+.menu {
+  padding: 5px 15px 10px 15px;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+li {
+  list-style: none;
+  cursor: pointer;
+}
+.menu:hover {
+  background: greenyellow;
+  background: rgb(65, 233, 255);
+  /* box-shadow: 0px 5px 15px rgba(63, 129, 93, 0.473); */
+  box-shadow: 0px 5px 15px rgba(17, 115, 115, 0.552);
+}
+
+/* ==================  Content */
+
+.content {
+  /* background-color: aqua; */
+  border: 1px solid black;
+  width: 100%;
+
+
+
+}
+.content h1 {
+  text-align: center;
+  font-size: 2rem;
+  padding: 20px;
+}
+.content p {
+  font-size: 1.6rem;
+  padding-left: 25px;
+}
+
+.words_ {
+  padding: 0 20px;
+  /* background-color: rgba(137, 43, 226, 0.616); */
+  font-size: 2.5rem;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.word {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ==================  Кроссплатформенность */
+
+@media (max-width: 650px) {
+  .sidebar {
+    display: none;
+  }
+}
+@media (max-width: 1080px) {
+  .menu {
+    font-size: .9rem;
+  }
+  .words_ {
+    font-size: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* @font-face {
+    font-family: 'CustomHeading';
+    src: url('./fonts/SFAtarianSystem.ttf') format('embedded-opentype'), /* Internet Explorer */
+/*   url('./fonts/SFAtarianSystem.ttf') format('woff2'),             /* Super Modern Browsers */
+/*   url('./fonts/SFAtarianSystem.ttf') format('woff'),              /* Pretty Modern Browsers */
+/*   url('./fonts/SFAtarianSystem.ttf') format('truetype'),          /* Safari, Android, iOS */
+/*   url('./fonts/SFAtarianSystem.ttf') format('svg');               /* Legacy iOS */ /*
+} */
+
+/* align-content: start | end | center | stretch | space-around | space-between | space-evenly;     */
+/* align-items: start | end | center | stretch; */
+/* align-items: stretch; */
+
+/* grid-area: 1 / 1 / 2 / 5; */
+/* grid-row-start: 1;
+grid-column-start: 1;
+grid-row-end: 2;
+grid-column-end: 5; */
+
+/* ====  align center 
+display: flex;
+justify-content: center;
+align-items: center; */
