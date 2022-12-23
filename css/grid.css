@@ -33,11 +33,29 @@ li {
   cursor: pointer;
 }
 .menu:hover {
-  background: greenyellow;
-  background: rgb(65, 233, 255);
+  /* background: greenyellow; */
+  /* background: rgb(65, 233, 255); */
   /* box-shadow: 0px 5px 15px rgba(63, 129, 93, 0.473); */
   box-shadow: 0px 5px 15px rgba(17, 115, 115, 0.552);
 }
+
+.menu img {
+  width: 20px;
+
+}
+.menu .imgOne {
+  display: inline;
+}
+.menu .imgTwo {
+  display: none;
+}
+.menu:hover .imgOne {
+  display: none;
+}
+.menu:hover .imgTwo {
+  display: inline;
+}
+
 
 /* ==================  Content */
 
